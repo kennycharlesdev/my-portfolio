@@ -110,3 +110,15 @@ footer {
   border-top: 1px solid #30343c;
   color: var(--muted);
 }
+
+/* Respect visitors who prefer less motion. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+a:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 5px;
+}
