@@ -3,77 +3,178 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <meta name="description" content="Kiny Charles — aspiring software developer building practical projects in AI automation and full-stack development.">
-  <title>Kiny Charles | Developer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kiny Charles — Developer building scalable software and intelligent systems.">
+  <title>Kiny Charles | Software Developer</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="#home" class="logo">KIN<span>Y.</span></a>
 
-  <nav>
-    <h2>KC<span>.</span>DEV</h2>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
+      <button class="menu-toggle" type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="nav-links">☰</button>
 
-  <header class="hero">
-    <p>SOFTWARE DEVELOPMENT & AI AUTOMATION</p>
-    <h1>Hi, I'm Kiny Charles.</h1>
-    <h2>Building Scalable Software &amp; Intelligent Systems.</h2>
-    <p>
-      Aspiring Software Developer focused on
-      AI automation, web applications and SaaS.
-    </p>
-    <a class="button" href="#projects">
-      Explore My Projects
-    </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I'm developing my software engineering
-        skills while building AI-powered tools
-        that help businesses work smarter.
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="project-grid">
-        <article>
-          <h3>LeadFlow OS</h3>
-          <p>AI-powered CRM and workflow automation.</p>
-          <small>In development</small>
-        </article>
-        <article>
-          <h3>Website Factory</h3>
-          <p>Website and client management platform.</p>
-          <small>In development</small>
-        </article>
-        <article>
-          <h3>AGENTRA</h3>
-          <p>AI agent and multi-model platform concept.</p>
-          <small>Planned project</small>
-        </article>
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="eyebrow">SOFTWARE DEVELOPMENT • AI • AUTOMATION</p>
+        <h1>Hi, I'm <span>Kiny Charles.</span></h1>
+        <h2>Building Scalable Software &amp; Intelligent Systems</h2>
+        <p class="hero-description">
+          I'm an aspiring software developer focused on creating
+          modern web applications, automation tools, and
+          intelligent digital solutions.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Explore Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Let's Connect</h2>
-      <a href="https://github.com/kennycharlesdev">
-        View My GitHub
-      </a>
+    <section id="about" class="section">
+      <div class="container">
+        <p class="eyebrow">01 / ABOUT</p>
+        <h2>About Me</h2>
+        <p>
+          I'm Kiny Charles, an emerging developer with an interest
+          in software engineering, artificial intelligence,
+          automation, and building practical technology solutions.
+        </p>
+        <p>
+          I'm continuously developing my technical skills through
+          hands-on projects, independent learning, and real-world
+          problem-solving.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="eyebrow">02 / SELECTED WORK</p>
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          <article class="project-card">
+            <h3>LeadFlow OS</h3>
+            <p>CRM and automation platform for lead management,
+              customer follow-ups, and business workflows.</p>
+            <span>Automation • APIs • CRM</span>
+          </article>
+
+          <article class="project-card">
+            <h3>Website Factory</h3>
+            <p>Platform concept for building and managing
+              business websites and digital services.</p>
+            <span>Web Development • SaaS</span>
+          </article>
+
+          <article class="project-card">
+            <h3>NextStream</h3>
+            <p>Streaming application project exploring user
+              accounts, content management, and media interfaces.</p>
+            <span>JavaScript • Node.js • Express</span>
+          </article>
+
+          <article class="project-card">
+            <h3>Developer Portfolio</h3>
+            <p>My personal website showcasing projects,
+              technical skills, and professional growth.</p>
+            <span>HTML • CSS • JavaScript</span>
+            <a href="https://github.com/kennycharlesdev/my-portfolio"
+              target="_blank" rel="noopener noreferrer">
+              View Source Code
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="eyebrow">03 / TECH STACK</p>
+        <h2>Technical Skills</h2>
+        <div class="skill-list">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>VS Code</span>
+          <span>Node.js — Learning</span>
+          <span>Linux — Learning</span>
+          <span>AI Automation — Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <div class="container">
+        <p class="eyebrow">04 / PROFESSIONAL DEVELOPMENT</p>
+        <h2>Certifications &amp; Learning</h2>
+        <div class="info-card">
+          <h3>CompTIA Security+</h3>
+          <p>Currently preparing through cybersecurity study
+            and hands-on technical practice.</p>
+          <span>In Progress — Not Yet Certified</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section">
+      <div class="container">
+        <p class="eyebrow">05 / EXPERIENCE</p>
+        <h2>My Resume</h2>
+        <p>
+          Explore my background, professional experience,
+          technical projects, and developing skills.
+        </p>
+        <p>Resume PDF coming soon.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <p class="eyebrow">06 / CONNECT</p>
+        <h2>Let's Build Something Great.</h2>
+        <p>
+          Interested in collaborating or discussing
+          technology and software development?
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary"
+            href="mailto:kennycharles.dev@gmail.com">
+            Email Me
+          </a>
+          <a class="btn btn-outline"
+            href="https://github.com/kennycharlesdev"
+            target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© <span id="year"></span> Kiny Charles</p>
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Kiny Charles.
+      Built with purpose.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
