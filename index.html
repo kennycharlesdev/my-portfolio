@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,156 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Kiny St Charles builds modern web experiences, AI automation workflows, and practical software solutions for teams and small businesses."
+      content="Kiny St Charles builds full-stack products, AI agents and automations: NextStream, HQ Command Center and LeadFlow OS."
     />
-    <meta name="keywords" content="Kiny St Charles, software developer, AI automation, web development, technical support, SaaS, portfolio" />
-    <meta property="og:title" content="Kiny St Charles | Software Developer & AI Automation Specialist" />
-    <meta
-      property="og:description"
-      content="Building practical web experiences, automation workflows, and digital tools that support business growth."
-    />
+    <meta name="keywords" content="Kiny St Charles, software developer, AI automation, MCP, full-stack, Node.js, portfolio" />
+    <meta property="og:title" content="Kiny St Charles | Full-stack Developer & AI Automation" />
+    <meta property="og:description" content="Full-stack products, AI agents and automations that actually ship." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://kennycharlesdev.github.io/my-portfolio/" />
-    <meta name="theme-color" content="#080b12" />
+    <meta property="og:image" content="https://kennycharlesdev.github.io/my-portfolio/assets/projects/nextstream.jpg" />
+    <meta name="theme-color" content="#07080c" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Kiny St Charles | Software Developer & AI Automation Specialist" />
-    <meta
-      name="twitter:description"
-      content="Developer portfolio focused on web development, AI automation, and practical digital systems."
-    />
-    <title>Kiny St Charles | Software Developer & AI Automation Specialist</title>
+    <meta name="twitter:title" content="Kiny St Charles | Full-stack Developer & AI Automation" />
+    <meta name="twitter:description" content="Full-stack products, AI agents and automations that actually ship." />
+    <title>Kiny St Charles | Full-stack Developer & AI Automation</title>
     <link rel="canonical" href="https://kennycharlesdev.github.io/my-portfolio/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>document.documentElement.classList.add("js");</script>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <nav class="navbar" aria-label="Main navigation">
-        <a href="#home" class="logo" aria-label="Kiny St Charles home">KIN<span>Y.</span></a>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
-        <button
-          class="menu-toggle"
-          type="button"
-          aria-label="Open navigation"
-          aria-expanded="false"
-          aria-controls="nav-links"
-        >
-          ☰
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a href="#home" class="logo" aria-label="Kiny St Charles home">
+          <span class="logo-mark">K</span><span class="logo-text">Kiny<span>.dev</span></span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
         </button>
 
         <ul class="nav-links" id="nav-links">
-          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#live">Live</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" class="nav-cta">Let’s talk</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
+      <!-- ============ HERO ============ -->
       <section id="home" class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="grid-lines"></div>
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="orb orb-c"></div>
+        </div>
+
         <div class="container hero-grid">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Software development • AI workflows • digital support</p>
-            <h1>Building practical digital systems that help people and businesses move faster.</h1>
-            <p class="hero-description">
-              I’m Kiny St Charles, a developer focused on building modern, accessible websites,
-              automation workflows, and useful tools that simplify operations and improve user experience.
+          <div class="hero-copy">
+            <p class="status-pill reveal"><span class="pulse-dot"></span> Open to developer &amp; AI automation roles</p>
+            <h1 class="hero-title" data-split>
+              I build products, AI agents &amp; automations that actually ship.
+            </h1>
+            <p class="hero-rotator reveal">
+              Currently building
+              <span class="rotator" aria-live="polite">
+                <span class="rotator-word">a creator video platform</span>
+              </span>
             </p>
-            <div class="hero-actions">
-              <a href="#projects" class="btn btn-primary">View projects</a>
-              <a href="#services" class="btn btn-secondary">Explore services</a>
-              <a
-                href="assets/resume/Kiny_St_Charles_Tech_Resume.pdf"
-                class="btn btn-ghost"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View resume
-              </a>
+            <p class="hero-description reveal">
+              I’m Kiny St Charles, a full-stack developer working in Node.js, Cloudflare and AI tooling. I turn messy
+              business workflows into software people actually use.
+            </p>
+            <div class="hero-actions reveal">
+              <a href="#projects" class="btn btn-primary magnetic">See the work <span aria-hidden="true">→</span></a>
+              <a href="assets/resume/Kiny_St_Charles_Tech_Resume.pdf" class="btn btn-ghost magnetic" target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
-            <ul class="quick-points" aria-label="Professional strengths">
-              <li>Frontend development</li>
-              <li>AI workflow thinking</li>
-              <li>Responsive UX design</li>
+
+            <dl class="stats reveal">
+              <div>
+                <dt><span class="count" data-to="4">0</span></dt>
+                <dd>active projects</dd>
+              </div>
+              <div>
+                <dt><span class="count" data-to="75">0</span>+</dt>
+                <dd>NextStream releases</dd>
+              </div>
+              <div>
+                <dt><span class="count" data-to="3">0</span></dt>
+                <dd>devices running HQ<br />(Mac, iPhone, TV)</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="terminal tilt">
+              <div class="terminal-bar">
+                <span></span><span></span><span></span>
+                <p>agent@hq ~ automation</p>
+              </div>
+              <pre class="terminal-body" aria-label="Animated terminal showing an AI agent reporting work to HQ"><code id="terminal-code"></code><span class="caret"></span></pre>
+            </div>
+            <div class="float-chip chip-a">⚡ MCP connected</div>
+            <div class="float-chip chip-b">✓ Deploy passed</div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-cue" aria-label="Scroll to about"><span></span></a>
+      </section>
+
+      <!-- ============ ANIMATION BELT ============ -->
+      <section class="belts" aria-label="Skills and focus areas">
+        <div class="belt belt-a">
+          <div class="belt-track">
+            <ul class="belt-group">
+              <li>Node.js</li><li class="star">✦</li>
+              <li>Express</li><li class="star">✦</li>
+              <li>Cloudflare Workers</li><li class="star">✦</li>
+              <li>Claude API</li><li class="star">✦</li>
+              <li>MCP servers</li><li class="star">✦</li>
+              <li>Stripe</li><li class="star">✦</li>
+              <li>SQL</li><li class="star">✦</li>
+              <li>AWS S3</li><li class="star">✦</li>
+              <li>Swift</li><li class="star">✦</li>
+              <li>PWA</li><li class="star">✦</li>
             </ul>
           </div>
-
-          <div class="hero-panel reveal">
-            <div class="panel-card panel-primary">
-              <span class="panel-label">Current focus</span>
-              <h2>Web apps, automation, and support-ready experiences.</h2>
-            </div>
-            <div class="panel-stack">
-              <div class="stack-pill">HTML</div>
-              <div class="stack-pill">CSS</div>
-              <div class="stack-pill">JavaScript</div>
-              <div class="stack-pill">GitHub</div>
-              <div class="stack-pill">AI workflows</div>
-              <div class="stack-pill">UX</div>
-            </div>
+        </div>
+        <div class="belt belt-b">
+          <div class="belt-track reverse">
+            <ul class="belt-group">
+              <li>Build</li><li class="star">●</li>
+              <li>Automate</li><li class="star">●</li>
+              <li>Ship</li><li class="star">●</li>
+              <li>Secure</li><li class="star">●</li>
+              <li>Iterate</li><li class="star">●</li>
+              <li>Repeat</li><li class="star">●</li>
+            </ul>
           </div>
         </div>
       </section>
 
+      <!-- ============ ABOUT ============ -->
       <section id="about" class="section">
-        <div class="container">
-          <p class="eyebrow">01 / About</p>
-          <div class="about-layout">
-            <div class="about-copy reveal">
-              <h2>Developer with a people-first problem-solving mindset.</h2>
-              <p>
-                I’m building toward software engineering, AI automation, and technology support roles by combining
-                hands-on project work, clear communication, and practical experience in fast-moving environments.
-              </p>
-              <p>
-                My background includes customer-facing service, team coordination, and operational responsibility. That
-                experience shaped how I approach software: I look for solutions that are useful, easy to understand, and
-                reliable for the people who need them.
-              </p>
-              <p>
-                I enjoy creating clean user experiences, learning modern development workflows, and turning business
-                problems into simple digital tools. My interest is especially strong in web development, SaaS support,
-                AI-assisted productivity, and technical support work where empathy and execution matter.
-              </p>
-            </div>
+        <div class="container about-layout">
+          <div class="about-copy">
+            <p class="eyebrow reveal">01 — About</p>
+            <h2 class="reveal">Developer with a people-first problem-solving mindset.</h2>
+            <p class="reveal">
+              My background is customer-facing service, team coordination and operations. That shaped how I build: I
+              look for software that is useful, easy to understand and reliable for the people who depend on it.
+            </p>
+            <p class="reveal">
+              Today I’m shipping my own products end to end: a creator video platform, a CRM, and an AI command center
+              that coordinates the coding agents I work with every day.
+            </p>
+          </div>
 
-            <div class="value-grid reveal">
-              <article class="mini-card">
-                <h3>Business-aware</h3>
-                <p>I build with practical outcomes in mind, not just visual polish.</p>
-              </article>
-              <article class="mini-card">
-                <h3>Reliable</h3>
-                <p>I focus on clarity, consistency, and follow-through in every project.</p>
-              </article>
-              <article class="mini-card">
-                <h3>Service-minded</h3>
-                <p>I enjoy helping users, clients, and teams get more value from digital tools.</p>
-              </article>
-              <article class="mini-card">
-                <h3>Growth-focused</h3>
-                <p>I continue learning through hands-on builds, automation experiments, and real-world systems.</p>
-              </article>
-            </div>
+          <div class="value-grid">
+            <article class="mini-card reveal spotlight">
+              <span class="mini-icon">◎</span>
+              <h3>Business-aware</h3>
+              <p>Practical outcomes first, visual polish second.</p>
+            </article>
+            <article class="mini-card reveal spotlight">
+              <span class="mini-icon">⟲</span>
+              <h3>Automation-minded</h3>
+              <p>If I do it twice, I look for a way to make a machine do it.</p>
+            </article>
+            <article class="mini-card reveal spotlight">
+              <span class="mini-icon">◈</span>
+              <h3>Security-conscious</h3>
+              <p>Encryption, CSRF, rate limits and scoped keys are built in from the start.</p>
+            </article>
+            <article class="mini-card reveal spotlight">
+              <span class="mini-icon">↗</span>
+              <h3>Always shipping</h3>
+              <p>Small releases, often. NextStream alone has 75+.</p>
+            </article>
           </div>
         </div>
       </section>
 
+      <!-- ============ PROJECTS ============ -->
       <section id="projects" class="section">
         <div class="container">
-          <p class="eyebrow">02 / Featured work</p>
-          <div class="section-heading reveal">
-            <h2>Selected projects.</h2>
-            <p>Full-stack products, AI tooling and practical builds, labeled honestly by status.</p>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow reveal">02 — Selected work</p>
+              <h2 class="reveal">Things I’ve built.</h2>
+            </div>
+            <p class="reveal">Full-stack products and AI tooling, labeled honestly by status.</p>
           </div>
 
           <div class="project-grid">
-            <article class="project-card reveal">
-              <div class="project-thumb nextstream-thumb has-shot" aria-hidden="true"></div>
+            <article class="project-card reveal spotlight tilt">
+              <div class="project-thumb has-shot" style="--shot: url('assets/projects/nextstream.jpg')" aria-hidden="true"></div>
               <div class="project-body">
                 <div class="project-header">
                   <h3>NextStream</h3>
@@ -165,52 +213,43 @@
                   A full-stack video platform for creators: uploads, live streams, shorts, messaging, a creator studio,
                   tips and a marketplace, installable on phones as a PWA.
                 </p>
-                <div class="meta-row">
-                  <span>Node.js</span>
-                  <span>Express</span>
-                  <span>Stripe</span>
-                  <span>AWS S3</span>
-                  <span>Claude API</span>
-                </div>
                 <ul class="feature-list">
-                  <li>Accounts, creator uploads, live, shorts, community and messaging</li>
                   <li>Wallet, tips, payouts and marketplace with Stripe</li>
                   <li>Admin dashboard with health checks, audit log and backups</li>
                   <li>Encryption layer, rate limiting and private-access gating</li>
                 </ul>
+                <div class="meta-row">
+                  <span>Node.js</span><span>Express</span><span>Stripe</span><span>AWS S3</span><span>Claude API</span>
+                </div>
               </div>
             </article>
 
-            <article class="project-card reveal">
-              <div class="project-thumb hq-thumb" aria-hidden="true"></div>
+            <article class="project-card reveal spotlight tilt">
+              <div class="project-thumb hq-thumb" aria-hidden="true">
+                <div class="thumb-nodes"><i></i><i></i><i></i><i></i></div>
+              </div>
               <div class="project-body">
                 <div class="project-header">
                   <h3>HQ Command Center</h3>
-                  <span class="status-badge status-live">Deployed · personal use</span>
+                  <span class="status-badge status-live">Deployed · personal</span>
                 </div>
                 <p>
-                  An AI command center that tracks several businesses in one place and lets AI coding agents claim
-                  work, report progress and log decisions through MCP.
+                  An AI command center that tracks several businesses in one place and lets AI coding agents claim work,
+                  report progress and log decisions through MCP.
                 </p>
-                <div class="meta-row">
-                  <span>Cloudflare Workers</span>
-                  <span>D1</span>
-                  <span>MCP</span>
-                  <span>Claude API</span>
-                  <span>Swift</span>
-                  <span>BrightScript</span>
-                </div>
                 <ul class="feature-list">
-                  <li>Web dashboard for projects, tasks, agents, inbox and activity</li>
                   <li>MCP server used by Claude Code, Codex and chat assistants</li>
                   <li>Voice assistant via a Mac menu-bar app and iPhone shortcut</li>
                   <li>Roku TV channel showing a live dashboard through a local relay</li>
                 </ul>
+                <div class="meta-row">
+                  <span>Cloudflare Workers</span><span>D1</span><span>MCP</span><span>Swift</span><span>BrightScript</span>
+                </div>
               </div>
             </article>
 
-            <article class="project-card reveal">
-              <div class="project-thumb leadflow-thumb has-shot" aria-hidden="true"></div>
+            <article class="project-card reveal spotlight tilt">
+              <div class="project-thumb has-shot" style="--shot: url('assets/projects/leadflow.jpg')" aria-hidden="true"></div>
               <div class="project-body">
                 <div class="project-header">
                   <h3>LeadFlow OS</h3>
@@ -220,48 +259,39 @@
                   A CRM MVP for lead tracking, follow-up tasks, session-based authentication and organization-scoped
                   dashboards.
                 </p>
-                <div class="meta-row">
-                  <span>Node.js</span>
-                  <span>Express</span>
-                  <span>SQLite</span>
-                  <span>Session auth</span>
-                </div>
                 <ul class="feature-list">
                   <li>Lead capture, filtering and status tracking</li>
-                  <li>Follow-up tasks with completion tracking</li>
                   <li>CSRF-protected routes and hardened auth</li>
-                  <li>Org-scoped data access and dashboard metrics, covered by API tests</li>
+                  <li>Org-scoped data access, covered by API tests</li>
                 </ul>
-                <div class="project-links">
-                  <a href="https://github.com/kennycharlesdev/leadflow-os" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+                <div class="meta-row">
+                  <span>Node.js</span><span>Express</span><span>SQLite</span><span>Session auth</span>
                 </div>
+                <p class="project-note">Private repo, code walkthrough on request</p>
               </div>
             </article>
 
-            <article class="project-card reveal">
-              <div class="project-thumb portfolio-thumb" aria-hidden="true"></div>
+            <article class="project-card reveal spotlight tilt">
+              <div class="project-thumb portfolio-thumb" aria-hidden="true"><span>K</span></div>
               <div class="project-body">
                 <div class="project-header">
-                  <h3>Portfolio V3</h3>
+                  <h3>This portfolio</h3>
                   <span class="status-badge status-live">Live</span>
                 </div>
                 <p>
-                  This site: a fast, dependency-free portfolio built to show projects, services and resume clearly to
-                  recruiters and clients.
+                  Dependency-free HTML, CSS and JavaScript with scroll-driven motion, live GitHub data and an automated
+                  site check on every push.
                 </p>
-                <div class="meta-row">
-                  <span>HTML</span>
-                  <span>CSS</span>
-                  <span>JavaScript</span>
-                  <span>GitHub Pages</span>
-                </div>
                 <ul class="feature-list">
-                  <li>Responsive, accessibility-focused layout</li>
-                  <li>Recruiter-friendly positioning and CTAs</li>
-                  <li>Direct resume and contact access</li>
+                  <li>Animated belts, counters, terminal and pipeline</li>
+                  <li>Respects reduced-motion settings</li>
+                  <li>GitHub Action verifies every page asset</li>
                 </ul>
+                <div class="meta-row">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Actions</span>
+                </div>
                 <div class="project-links">
-                  <a href="https://github.com/kennycharlesdev/my-portfolio" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+                  <a href="https://github.com/kennycharlesdev/my-portfolio" target="_blank" rel="noopener noreferrer">View source ↗</a>
                 </div>
               </div>
             </article>
@@ -269,188 +299,218 @@
         </div>
       </section>
 
+      <!-- ============ CASE STUDIES ============ -->
       <section class="section case-study-section">
         <div class="container">
-          <p class="eyebrow">03 / Case studies</p>
-          <h2>Project thinking in context.</h2>
+          <p class="eyebrow reveal">03 — Case studies</p>
+          <h2 class="reveal">How they work under the hood.</h2>
 
           <article class="case-study reveal">
             <div class="case-media">
-              <img class="case-shot" src="assets/projects/nextstream.jpg" alt="NextStream home page with video feed" loading="lazy" />
+              <img class="case-shot" src="assets/projects/nextstream.jpg" alt="NextStream home page" loading="lazy" />
             </div>
             <div class="case-copy">
-              <p class="eyebrow secondary">Case study 01</p>
+              <p class="case-num">01</p>
               <h3>NextStream</h3>
               <ul class="detail-list">
-                <li><strong>Status:</strong> Preparing a private creator beta; not yet open to the public</li>
-                <li><strong>Architecture:</strong> Express server with modular routes for auth, videos, live, studio, wallet, marketplace and admin; SQL migrations; S3 media storage; Stripe payments; Sentry monitoring</li>
-                <li><strong>Challenge:</strong> Growing a prototype into something safe to launch: secrets, encryption, rate limits, backups and admin visibility</li>
-                <li><strong>Accomplishment:</strong> 75+ incremental releases to v7.8, with an admin readiness score, audit exports, backup manifests and a phone install flow</li>
+                <li><strong>Status</strong> Preparing a private creator beta; not yet open to the public</li>
+                <li><strong>Architecture</strong> Express server with modular routes for auth, videos, live, studio, wallet, marketplace and admin; SQL migrations; S3 media; Stripe payments; Sentry monitoring</li>
+                <li><strong>Challenge</strong> Growing a prototype into something safe to launch: secrets, encryption, rate limits, backups and admin visibility</li>
+                <li><strong>Result</strong> 75+ incremental releases to v7.8, with an admin readiness score, audit exports, backup manifests and a phone install flow</li>
               </ul>
             </div>
           </article>
 
-          <article class="case-study reveal">
-            <div class="case-media" role="img" aria-label="Illustration of the HQ dashboard layout (the real one holds private business data)">
-              <div class="browser-bar">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="browser-body">
-                <div class="browser-sidebar"></div>
-                <div class="browser-main">
-                  <div class="browser-line short"></div>
-                  <div class="browser-line"></div>
-                  <div class="browser-card-row">
-                    <div class="browser-card"></div>
-                    <div class="browser-card"></div>
-                  </div>
-                  <div class="browser-card-row">
-                    <div class="browser-card"></div>
-                    <div class="browser-card"></div>
-                  </div>
-                </div>
-              </div>
+          <article class="case-study reverse reveal">
+            <div class="case-media pipeline-media">
+              <svg class="pipeline" viewBox="0 0 480 300" role="img" aria-labelledby="pipe-title">
+                <title id="pipe-title">Diagram: AI agents report to HQ, which feeds the dashboard, Mac, iPhone and TV</title>
+                <path class="wire" d="M110 80 C 170 80, 180 150, 240 150" />
+                <path class="wire" d="M110 220 C 170 220, 180 150, 240 150" />
+                <path class="wire" d="M240 150 C 300 150, 310 50, 370 50" />
+                <path class="wire" d="M240 150 C 300 150, 310 117, 370 117" />
+                <path class="wire" d="M240 150 C 300 150, 310 183, 370 183" />
+                <path class="wire" d="M240 150 C 300 150, 310 250, 370 250" />
+                <path class="flow" d="M110 80 C 170 80, 180 150, 240 150" />
+                <path class="flow d2" d="M110 220 C 170 220, 180 150, 240 150" />
+                <path class="flow d3" d="M240 150 C 300 150, 310 50, 370 50" />
+                <path class="flow d4" d="M240 150 C 300 150, 310 117, 370 117" />
+                <path class="flow d5" d="M240 150 C 300 150, 310 183, 370 183" />
+                <path class="flow d6" d="M240 150 C 300 150, 310 250, 370 250" />
+                <g class="node"><rect x="20" y="60" width="90" height="40" rx="10" /><text x="65" y="85">Claude Code</text></g>
+                <g class="node"><rect x="20" y="200" width="90" height="40" rx="10" /><text x="65" y="225">Codex</text></g>
+                <g class="node hub"><circle cx="240" cy="150" r="42" /><text x="240" y="146">HQ</text><text class="sub" x="240" y="163">Worker + D1</text></g>
+                <g class="node"><rect x="370" y="32" width="96" height="36" rx="10" /><text x="418" y="55">Dashboard</text></g>
+                <g class="node"><rect x="370" y="99" width="96" height="36" rx="10" /><text x="418" y="122">Mac app</text></g>
+                <g class="node"><rect x="370" y="165" width="96" height="36" rx="10" /><text x="418" y="188">iPhone</text></g>
+                <g class="node"><rect x="370" y="232" width="96" height="36" rx="10" /><text x="418" y="255">Roku TV</text></g>
+              </svg>
             </div>
             <div class="case-copy">
-              <p class="eyebrow secondary">Case study 02</p>
+              <p class="case-num">02</p>
               <h3>HQ Command Center</h3>
               <ul class="detail-list">
-                <li><strong>Status:</strong> Deployed on Cloudflare and used daily as a personal tool</li>
-                <li><strong>Architecture:</strong> Cloudflare Worker + D1 database exposing a dashboard, a REST API and an MCP server; native Mac app, iPhone shortcut and Roku channel as clients</li>
-                <li><strong>Challenge:</strong> Coordinating several AI agents safely: per-device keys, job claims so two agents never take the same task, and a TV client that holds no secrets</li>
-                <li><strong>Accomplishment:</strong> One shared source of truth that Claude Code and Codex both report into, with automated tests for policy, automation safety and voice</li>
+                <li><strong>Status</strong> Deployed on Cloudflare and used daily as a personal tool</li>
+                <li><strong>Architecture</strong> Cloudflare Worker + D1 exposing a dashboard, REST API and MCP server; Mac app, iPhone shortcut and Roku channel as clients</li>
+                <li><strong>Challenge</strong> Coordinating several AI agents safely: per-device keys, job claims so two agents never take the same task, and a TV client that holds no secrets</li>
+                <li><strong>Result</strong> One source of truth that Claude Code and Codex both report into, with tests for policy, automation safety and voice</li>
               </ul>
             </div>
           </article>
 
           <article class="case-study reveal">
             <div class="case-media">
-              <img class="case-shot" src="assets/projects/leadflow.jpg" alt="LeadFlow OS CRM dashboard" loading="lazy" />
+              <img class="case-shot" src="assets/projects/leadflow.jpg" alt="LeadFlow OS pipeline dashboard with demo data" loading="lazy" />
             </div>
             <div class="case-copy">
-              <p class="eyebrow secondary">Case study 03</p>
+              <p class="case-num">03</p>
               <h3>LeadFlow OS</h3>
               <ul class="detail-list">
-                <li><strong>Status:</strong> Working MVP in active development; not production-ready and not intended for customer data</li>
-                <li><strong>Architecture:</strong> Node.js, Express and SQLite CRM for lead intake, follow-up tasks, dashboards, session auth and organization-scoped access</li>
-                <li><strong>Challenge:</strong> Keeping multi-organization data isolated while keeping the codebase approachable</li>
-                <li><strong>Accomplishment:</strong> Protected CRM routes, CSRF checks, role-based admin access and API tests for registration, login and data isolation</li>
+                <li><strong>Status</strong> Working MVP in active development; not intended for customer data yet</li>
+                <li><strong>Architecture</strong> Node.js, Express and SQLite CRM for lead intake, follow-up tasks, dashboards, session auth and org-scoped access</li>
+                <li><strong>Challenge</strong> Keeping multi-organization data isolated while keeping the codebase approachable</li>
+                <li><strong>Result</strong> Protected routes, CSRF checks, role-based admin access and API tests for registration, login and data isolation</li>
               </ul>
             </div>
           </article>
         </div>
       </section>
 
+      <!-- ============ LIVE (AUTOMATION) ============ -->
+      <section id="live" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow reveal">04 — Live</p>
+              <h2 class="reveal">This page updates itself.</h2>
+            </div>
+            <p class="reveal">Pulled live from the GitHub API each time the page loads. No manual edits.</p>
+          </div>
+
+          <div class="live-grid">
+            <article class="live-card reveal spotlight">
+              <p class="live-label"><span class="pulse-dot"></span> Last deployed</p>
+              <p class="live-value" id="live-deployed">checking…</p>
+              <p class="live-sub" id="live-deployed-at"></p>
+            </article>
+            <article class="live-card reveal spotlight">
+              <p class="live-label">Automated site check</p>
+              <p class="live-value" id="live-check">–</p>
+              <p class="live-sub" id="live-check-sub">GitHub Actions verifies every asset on each push</p>
+            </article>
+            <article class="live-card live-commits reveal spotlight">
+              <p class="live-label">Latest commits to this site</p>
+              <ol id="live-commits" class="commit-list">
+                <li class="muted">Loading from GitHub…</li>
+              </ol>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVICES ============ -->
       <section id="services" class="section">
         <div class="container">
-          <p class="eyebrow">04 / Services</p>
-          <div class="section-heading reveal">
-            <h2>What I can help with.</h2>
-            <p>Practical digital support for businesses, founders, and teams who need a clearer online presence.</p>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow reveal">05 — Services</p>
+              <h2 class="reveal">What I can help with.</h2>
+            </div>
+            <p class="reveal">For founders, small businesses and teams who need software that does real work.</p>
           </div>
 
           <div class="service-grid">
-            <article class="service-card reveal">
-              <div class="service-icon">01</div>
-              <h3>Web development</h3>
-              <p>Responsive websites and landing pages built for clarity, usability, and conversion-focused experiences.</p>
+            <article class="service-card reveal spotlight">
+              <span class="service-num">01</span>
+              <h3>Web apps &amp; sites</h3>
+              <p>Responsive, fast websites and full-stack web apps with auth, payments and admin tools.</p>
             </article>
-
-            <article class="service-card reveal">
-              <div class="service-icon">02</div>
-              <h3>Website maintenance</h3>
-              <p>Support for keeping a website current, clean, stable, and easy for users to navigate over time.</p>
+            <article class="service-card reveal spotlight">
+              <span class="service-num">02</span>
+              <h3>AI agents &amp; automation</h3>
+              <p>Claude-powered assistants, MCP integrations and workflows that remove repetitive manual work.</p>
             </article>
-
-            <article class="service-card reveal">
-              <div class="service-icon">03</div>
-              <h3>AI automation</h3>
-              <p>Workflow ideas and automation support that reduce manual work and improve consistency across repetitive tasks.</p>
+            <article class="service-card reveal spotlight">
+              <span class="service-num">03</span>
+              <h3>Maintenance &amp; hardening</h3>
+              <p>Keeping a site current, secure and stable: backups, monitoring, rate limits and fixes.</p>
             </article>
           </div>
         </div>
       </section>
 
+      <!-- ============ SKILLS ============ -->
       <section id="skills" class="section">
         <div class="container">
-          <p class="eyebrow">05 / Skills</p>
-          <div class="section-heading reveal">
-            <h2>Technologies used vs. currently learning.</h2>
-            <p>Clear separation between practical experience and active learning goals.</p>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow reveal">06 — Skills</p>
+              <h2 class="reveal">Built with vs. learning.</h2>
+            </div>
+            <p class="reveal">Clear separation between what I’ve shipped and what I’m working toward.</p>
           </div>
 
-          <div class="skill-columns reveal">
-            <div class="skill-panel">
-              <h3>Built and used</h3>
+          <div class="skill-columns">
+            <div class="skill-panel reveal">
+              <h3>Built and shipped with</h3>
               <div class="skill-list">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>GitHub Pages</span>
-                <span>Responsive Design</span>
-                <span>Semantic HTML</span>
-                <span>Workflow Thinking</span>
+                <span>JavaScript</span><span>Node.js</span><span>Express</span><span>REST APIs</span><span>SQL / SQLite</span>
+                <span>Cloudflare Workers + D1</span><span>MCP</span><span>Claude API</span><span>Stripe</span><span>AWS S3</span>
+                <span>HTML5</span><span>CSS3</span><span>Git &amp; GitHub</span><span>PWA</span>
               </div>
             </div>
-
-            <div class="skill-panel learning-panel">
+            <div class="skill-panel learning-panel reveal">
               <h3>Currently learning</h3>
               <div class="skill-list">
-                <span>Node.js</span>
-                <span>Express</span>
-                <span>REST APIs</span>
-                <span>AI automation tools</span>
-                <span>Database fundamentals</span>
-                <span>CompTIA Security+</span>
-                <span>Cybersecurity basics</span>
-                <span>System administration</span>
+                <span>Swift / macOS apps</span><span>CompTIA Security+</span><span>Cybersecurity</span>
+                <span>System administration</span><span>Testing at scale</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="resume" class="section">
-        <div class="container resume-panel reveal">
-          <div>
-            <p class="eyebrow">06 / Resume</p>
-            <h2>Professional background and project highlights.</h2>
-            <p>
-              My resume includes my background, project work, and the technical direction I’m building toward in software,
-              AI automation, and support-focused roles.
-            </p>
-          </div>
-          <div class="resume-actions">
-            <a class="btn btn-primary" href="assets/resume/Kiny_St_Charles_Tech_Resume.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
-            <a class="btn btn-ghost" href="assets/resume/Kiny_St_Charles_Tech_Resume.pdf" download="Kiny_St_Charles_Tech_Resume.pdf" rel="noopener noreferrer">Download</a>
-          </div>
+      <!-- ============ CTA BELT ============ -->
+      <section class="belt belt-cta" aria-hidden="true">
+        <div class="belt-track slow">
+          <ul class="belt-group">
+            <li>Let’s build something useful</li><li class="star">✦</li>
+            <li>Let’s build something useful</li><li class="star">✦</li>
+            <li>Let’s build something useful</li><li class="star">✦</li>
+          </ul>
         </div>
       </section>
 
-      <section id="contact" class="section">
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="section contact-section">
         <div class="container contact-wrap reveal">
           <div>
-            <p class="eyebrow">07 / Contact</p>
-            <h2>Let’s build something useful.</h2>
+            <p class="eyebrow">07 — Contact</p>
+            <h2>Have a project or a role in mind?</h2>
             <p>
-              I’m open to junior developer roles, AI automation opportunities, web support work, and freelance projects that
-              need thoughtful execution and dependable communication.
+              I’m open to junior developer roles, AI automation work, web support and freelance projects that need
+              thoughtful execution and dependable communication.
             </p>
           </div>
-
           <div class="contact-panel">
-            <a href="mailto:kennycharles.dev@gmail.com">kennycharles.dev@gmail.com</a>
-            <a href="https://github.com/kennycharlesdev" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="assets/resume/Kiny_St_Charles_Tech_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <button class="contact-email magnetic" type="button" data-email="kennycharles.dev@gmail.com">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">kennycharles.dev@gmail.com</span>
+              <span class="contact-hint">Click to copy</span>
+            </button>
+            <a href="https://github.com/kennycharlesdev" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="assets/resume/Kiny_St_Charles_Tech_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF) ↗</a>
+            <a href="assets/resume/Kiny_St_Charles_Tech_Resume.pdf" download="Kiny_St_Charles_Tech_Resume.pdf">Download resume ↓</a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>© <span id="year">2026</span> Kiny St Charles. Built with purpose.</p>
+    <footer class="footer container">
+      <p>© <span id="year">2026</span> Kiny St Charles</p>
+      <p class="muted">Hand-built, no frameworks. <a href="#home">Back to top ↑</a></p>
     </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
   </body>
 </html>

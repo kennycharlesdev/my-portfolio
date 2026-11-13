@@ -1,5 +1,26 @@
 # Changelog
 
+## Portfolio V4 — Redesign (2026-11-13)
+
+### Added
+
+- Full visual redesign: new type (Bricolage Grotesque, Inter, JetBrains Mono), lime/violet palette, animated grid hero
+- Animation belts: two crossing marquee belts (stack + "Build · Automate · Ship") and an outlined CTA belt
+- Motion: word-by-word headline, rotating "currently building" line, typing terminal, count-up stats,
+  scroll progress bar, scrollspy nav, card spotlight and tilt, magnetic buttons, animated HQ pipeline diagram
+- Live section pulling last deploy, latest commits and the site-check status from the GitHub API
+- GitHub Action (`site-check.yml`) that checks JavaScript syntax and every referenced asset on each push
+- Copy-to-clipboard email with toast
+
+### Fixed
+
+- LeadFlow OS "GitHub repo" link pointed to a private repo (404 for visitors); replaced with a note
+- Skills updated to reflect what has actually been shipped (Node.js, Express, Cloudflare, MCP, Stripe)
+
+### Accessibility
+
+- All motion is disabled under `prefers-reduced-motion`; belts become scrollable instead
+
 ## Portfolio V3.2 — Project refresh (2026-11-12)
 
 ### Updated
