@@ -1,5 +1,14 @@
 # Changelog
 
+## Portfolio V4.2 — About story + Homelab (2026-11-13)
+
+- About rewritten as a story: Nassau to Naples, resort and warehouse work to shipping software (facts from the resume)
+- "My AI team" panel: Claude Code (lead builder), Codex (reviewer/backup), ChatGPT (planning), coordinated through HQ
+- Animated career timeline that draws as you scroll
+- New "Also building" grid: Website Factory, Dashipelago, TipAccord, SmartLifePlanner, Wavecrate, TradeGuard, OnGround 242, SWFL Lead Recovery
+- New Homelab section: animated server rack (blinking LEDs, load bars, fans) for the 13-container Debian/Docker stack
+- Stats now show 15+ projects built; skills and belt include Linux, Docker, Tailscale, Next.js, Supabase
+
 ## Portfolio V4.1 — Bahamas theme (2026-11-13)
 
 - Palette moved to Bahamas flag colors: gold #FFC72C, aquamarine #00ABC9, black, on a deep-ocean background
