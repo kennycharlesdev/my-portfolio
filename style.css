@@ -2530,6 +2530,60 @@ a.more-card:hover {
   }
 }
 
+/* ---------- demo videos ---------- */
+.case-stack {
+  display: grid;
+  gap: 14px;
+}
+
+.case-study.reverse .case-stack {
+  order: 2;
+}
+
+.case-video {
+  position: relative;
+  margin: 0;
+}
+
+.demo-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top left;
+  background: #031217;
+}
+
+.case-video figcaption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-top: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--dim);
+}
+
+.rec-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff5a5a;
+  box-shadow: 0 0 8px #ff5a5a;
+  animation: led 1.2s steps(2) infinite;
+}
+
+.pipeline-media {
+  padding: 14px;
+}
+
+@media (max-width: 1024px) {
+  .case-study.reverse .case-stack {
+    order: 0;
+  }
+}
+
 /* ---------- reduced motion ---------- */
 
 @media (prefers-reduced-motion: reduce) {
@@ -2554,6 +2608,7 @@ a.more-card:hover {
     display: none;
   }
 
+  .rec-dot,
   .wave,
   .sun,
   .led,

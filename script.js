@@ -244,6 +244,31 @@
   );
   onScroll();
 
+  /* ---------- demo videos: play only while visible ---------- */
+  const videos = $$(".demo-video");
+  if (videos.length) {
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      videos.forEach((v) => {
+        v.controls = true;
+        v.preload = "metadata";
+      });
+    } else {
+      const vio = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            const v = e.target;
+            if (e.isIntersecting) {
+              if (v.preload === "none") v.preload = "auto";
+              v.play().catch(() => (v.controls = true));
+            } else v.pause();
+          });
+        },
+        { threshold: 0.35 }
+      );
+      videos.forEach((v) => vio.observe(v));
+    }
+  }
+
   /* ---------- timeline line draws as you scroll ---------- */
   const timeline = $(".timeline");
   if (timeline) {
