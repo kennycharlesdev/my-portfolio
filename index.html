@@ -46,6 +46,7 @@
         <ul class="nav-links" id="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Work</a></li>
+          <li><a href="#homelab">Homelab</a></li>
           <li><a href="#live">Live</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -93,8 +94,8 @@
 
             <dl class="stats reveal">
               <div>
-                <dt><span class="count" data-to="4">0</span></dt>
-                <dd>active projects</dd>
+                <dt><span class="count" data-to="15">0</span>+</dt>
+                <dd>projects built</dd>
               </div>
               <div>
                 <dt><span class="count" data-to="75">0</span>+</dt>
@@ -138,6 +139,8 @@
               <li>AWS S3</li><li class="star">✦</li>
               <li>Swift</li><li class="star">✦</li>
               <li>PWA</li><li class="star">✦</li>
+              <li>Docker</li><li class="star">✦</li>
+              <li>Tailscale</li><li class="star">✦</li>
             </ul>
           </div>
         </div>
@@ -156,22 +159,86 @@
       </section>
 
       <!-- ============ ABOUT ============ -->
-      <section id="about" class="section">
-        <div class="container about-layout">
-          <div class="about-copy">
+      <section id="about" class="section about-section">
+        <div class="container">
+          <div class="about-hero">
             <p class="eyebrow reveal">01 — About</p>
-            <h2 class="reveal">Developer with a people-first problem-solving mindset.</h2>
-            <p class="reveal">
-              My background is customer-facing service, team coordination and operations. That shaped how I build: I
-              look for software that is useful, easy to understand and reliable for the people who depend on it.
-            </p>
-            <p class="reveal">
-              Today I’m shipping my own products end to end: a creator video platform, a CRM, and an AI command center
-              that coordinates the coding agents I work with every day.
-            </p>
+            <h2 class="reveal">From Nassau to Naples.<br /><span class="grad">From the resort floor to shipping software.</span></h2>
           </div>
 
-          <div class="value-grid">
+          <div class="about-layout">
+            <div class="about-copy">
+              <p class="lead reveal">
+                I grew up in the Bahamas, finished school in Nassau in 2020, and now live in Naples, Florida. I didn’t
+                come up through a CS degree. I came up through jobs where things had to work, every shift.
+              </p>
+              <p class="reveal">
+                I supervised and trained a lifeguard team at Great Wolf Lodge, moved freight at The Home Depot, and
+                today I serve guests at the Four Seasons. Those jobs taught me what good software should feel like:
+                calm under pressure, clear to the person using it, and reliable when it counts.
+              </p>
+              <p class="reveal">
+                After shifts I build. This year that’s become <strong>15+ projects</strong>: a creator video
+                platform, a CRM, a delivery app for Nassau, a tip-allocation tool for restaurants, a self-hosted AI
+                homelab, and the command center that ties it all together.
+              </p>
+              <p class="reveal">
+                I work like a small team. <strong>Claude Code</strong> is my lead builder, <strong>Codex</strong> reviews
+                and covers as backup, and <strong>ChatGPT</strong> helps me plan and research. They all report into HQ,
+                the MCP server I built, so nothing gets lost between them. I make the product calls, check the work and
+                ship it.
+              </p>
+
+              <div class="ai-team reveal">
+                <div class="ai-member">
+                  <span class="ai-dot" style="--c: var(--lime)"></span>
+                  <div><b>Claude Code</b><small>Lead builder</small></div>
+                </div>
+                <div class="ai-member">
+                  <span class="ai-dot" style="--c: var(--violet)"></span>
+                  <div><b>Codex</b><small>Reviewer &amp; backup</small></div>
+                </div>
+                <div class="ai-member">
+                  <span class="ai-dot" style="--c: var(--cyan)"></span>
+                  <div><b>ChatGPT</b><small>Planning &amp; research</small></div>
+                </div>
+                <div class="ai-member me">
+                  <span class="ai-dot" style="--c: #fff"></span>
+                  <div><b>Me</b><small>Product calls, review, ship</small></div>
+                </div>
+              </div>
+            </div>
+
+            <ol class="timeline">
+              <li class="reveal">
+                <span class="tl-year">2020</span>
+                <h3>Graduated in Nassau</h3>
+                <p>Finished high school in the Bahamas, where I grew up.</p>
+              </li>
+              <li class="reveal">
+                <span class="tl-year">2024–25</span>
+                <h3>Lifeguard supervisor, Great Wolf Lodge</h3>
+                <p>Ran shifts, trained new guards and handled guest issues where safety came first.</p>
+              </li>
+              <li class="reveal">
+                <span class="tl-year">2025–26</span>
+                <h3>Warehouse associate, The Home Depot</h3>
+                <p>Receiving, inventory and fulfillment in Houston. Systems thinking, at scale.</p>
+              </li>
+              <li class="reveal">
+                <span class="tl-year">2026</span>
+                <h3>Four Seasons by day, shipping by night</h3>
+                <p>NextStream, HQ Command Center, LeadFlow OS and a home server stack, built with an AI team.</p>
+              </li>
+              <li class="reveal now">
+                <span class="tl-year">Next</span>
+                <h3>Full-time developer &amp; CompTIA Security+</h3>
+                <p>Looking for a team where I can build, support and keep learning.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="value-grid wide">
             <article class="mini-card reveal spotlight">
               <span class="mini-icon">◎</span>
               <h3>Business-aware</h3>
@@ -185,7 +252,7 @@
             <article class="mini-card reveal spotlight">
               <span class="mini-icon">◈</span>
               <h3>Security-conscious</h3>
-              <p>Encryption, CSRF, rate limits and scoped keys are built in from the start.</p>
+              <p>Encryption, CSRF, rate limits and scoped keys from the start.</p>
             </article>
             <article class="mini-card reveal spotlight">
               <span class="mini-icon">↗</span>
@@ -305,6 +372,64 @@
         </div>
       </section>
 
+      <section class="section more-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow reveal">Also building</p>
+              <h2 class="reveal">More from the workshop.</h2>
+            </div>
+            <p class="reveal">Smaller and earlier-stage builds. Status labels are honest: beta means private testing.</p>
+          </div>
+          <div class="more-grid">
+            <a class="more-card reveal spotlight" href="https://website-factory-platform.built-unseen-content-os.workers.dev" target="_blank" rel="noopener noreferrer">
+              <span class="status-badge status-live">Live</span>
+              <h3>Website Factory</h3>
+              <p>Builds and delivers small-business websites, with request forms and a private inbox.</p>
+              <span class="more-link">Visit ↗</span>
+            </a>
+            <div class="more-card reveal spotlight">
+              <span class="status-badge status-mvp">Private beta</span>
+              <h3>Dashipelago</h3>
+              <p>Mobile-first shopping and food delivery pilot for Nassau. Next.js, Supabase.</p>
+            </div>
+            <div class="more-card reveal spotlight">
+              <span class="status-badge status-mvp">Private beta</span>
+              <h3>TipAccord</h3>
+              <p>Restaurant tip-allocation engine with staff accounts, versioned rules and exports.</p>
+            </div>
+            <a class="more-card reveal spotlight" href="https://smart-life-planner.pages.dev" target="_blank" rel="noopener noreferrer">
+              <span class="status-badge status-mvp">Beta</span>
+              <h3>SmartLifePlanner</h3>
+              <p>Personal and shared life planner. Expo + Supabase, private item sharing.</p>
+              <span class="more-link">Visit ↗</span>
+            </a>
+            <a class="more-card reveal spotlight" href="https://open-music-deck.pages.dev/" target="_blank" rel="noopener noreferrer">
+              <span class="status-badge status-live">Live</span>
+              <h3>Wavecrate Music</h3>
+              <p>Search and stream legal free music from open catalogs. Installable PWA.</p>
+              <span class="more-link">Visit ↗</span>
+            </a>
+            <a class="more-card reveal spotlight" href="https://project-7iard.vercel.app" target="_blank" rel="noopener noreferrer">
+              <span class="status-badge status-mvp">Beta</span>
+              <h3>TradeGuard</h3>
+              <p>Approval-first paper-trading desk with TOTP sign-in. No live trading, by design.</p>
+              <span class="more-link">Visit ↗</span>
+            </a>
+            <div class="more-card reveal spotlight">
+              <span class="status-badge status-build">Building</span>
+              <h3>OnGround 242</h3>
+              <p>Property visits and reports in The Bahamas, with customer, field-rep and admin portals.</p>
+            </div>
+            <div class="more-card reveal spotlight">
+              <span class="status-badge status-build">Building</span>
+              <h3>SWFL Lead Recovery</h3>
+              <p>Missed-call text-back for home-service companies. Node, Supabase, Twilio.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ============ CASE STUDIES ============ -->
       <section class="section case-study-section">
         <div class="container">
@@ -414,12 +539,66 @@
         </div>
       </section>
 
+      <!-- ============ HOMELAB ============ -->
+      <section id="homelab" class="section lab-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow reveal">05 — Homelab</p>
+              <h2 class="reveal">My own little data center.</h2>
+            </div>
+            <p class="reveal">
+              A Debian box at home running 13 containers with Docker Compose: private AI, network-wide ad blocking,
+              monitoring and remote access over Tailscale.
+            </p>
+          </div>
+
+          <div class="lab-layout">
+            <div class="rack reveal" aria-label="Illustration of a server rack with blinking status lights">
+              <div class="rack-top"><span>kenny-lab</span><span class="rack-os">Debian · Docker</span></div>
+              <div class="rack-unit"><i class="led"></i><i class="led d2"></i><span>AI · Open WebUI · Ollama</span><b class="bars"></b></div>
+              <div class="rack-unit"><i class="led"></i><i class="led d3"></i><span>Memory · Qdrant · Whisper</span><b class="bars"></b></div>
+              <div class="rack-unit"><i class="led gold"></i><i class="led d2"></i><span>Network · Pi-hole · Tailscale</span><b class="bars"></b></div>
+              <div class="rack-unit"><i class="led"></i><i class="led gold d3"></i><span>Monitor · Prometheus · Grafana</span><b class="bars"></b></div>
+              <div class="rack-unit"><i class="led"></i><i class="led d2"></i><span>Ops · Portainer · code-server</span><b class="bars"></b></div>
+              <div class="rack-unit"><i class="led gold"></i><i class="led d3"></i><span>Home · Home Assistant · backups</span><b class="bars"></b></div>
+              <div class="rack-fans"><span></span><span></span><span></span></div>
+            </div>
+
+            <div class="lab-grid">
+              <article class="lab-card reveal spotlight">
+                <h3><span class="lab-ic">✦</span> Private AI</h3>
+                <p>Open WebUI as one chat interface for local Ollama models and Claude/OpenAI APIs, with Qdrant for memory and Whisper for voice.</p>
+              </article>
+              <article class="lab-card reveal spotlight">
+                <h3><span class="lab-ic">◍</span> Network</h3>
+                <p>Pi-hole blocks ads for every device on my Tailscale network, at home or away. Tested by resolving ad domains to 0.0.0.0.</p>
+              </article>
+              <article class="lab-card reveal spotlight">
+                <h3><span class="lab-ic">▤</span> Monitoring</h3>
+                <p>Prometheus scrapes node-exporter, cAdvisor and Pi-hole metrics; Grafana dashboards show host and container health.</p>
+              </article>
+              <article class="lab-card reveal spotlight">
+                <h3><span class="lab-ic">⌂</span> Ops &amp; home</h3>
+                <p>Portainer for containers, code-server for coding from my phone, Home Assistant, and scripted daily backups.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="lab-stack reveal">
+            <span>Debian</span><span>Docker Compose</span><span>Tailscale</span><span>Pi-hole</span><span>Ollama</span>
+            <span>Open WebUI</span><span>Qdrant</span><span>Whisper</span><span>Prometheus</span><span>Grafana</span>
+            <span>cAdvisor</span><span>Portainer</span><span>code-server</span><span>Home Assistant</span><span>Bash</span>
+          </div>
+        </div>
+      </section>
+
       <!-- ============ SERVICES ============ -->
       <section id="services" class="section">
         <div class="container">
           <div class="section-heading">
             <div>
-              <p class="eyebrow reveal">05 — Services</p>
+              <p class="eyebrow reveal">06 — Services</p>
               <h2 class="reveal">What I can help with.</h2>
             </div>
             <p class="reveal">For founders, small businesses and teams who need software that does real work.</p>
@@ -450,7 +629,7 @@
         <div class="container">
           <div class="section-heading">
             <div>
-              <p class="eyebrow reveal">06 — Skills</p>
+              <p class="eyebrow reveal">07 — Skills</p>
               <h2 class="reveal">Built with vs. learning.</h2>
             </div>
             <p class="reveal">Clear separation between what I’ve shipped and what I’m working toward.</p>
@@ -463,13 +642,14 @@
                 <span>JavaScript</span><span>Node.js</span><span>Express</span><span>REST APIs</span><span>SQL / SQLite</span>
                 <span>Cloudflare Workers + D1</span><span>MCP</span><span>Claude API</span><span>Stripe</span><span>AWS S3</span>
                 <span>HTML5</span><span>CSS3</span><span>Git &amp; GitHub</span><span>PWA</span>
+                <span>Linux / Debian</span><span>Docker Compose</span><span>Tailscale</span><span>Next.js</span><span>Supabase</span>
               </div>
             </div>
             <div class="skill-panel learning-panel reveal">
               <h3>Currently learning</h3>
               <div class="skill-list">
                 <span>Swift / macOS apps</span><span>CompTIA Security+</span><span>Cybersecurity</span>
-                <span>System administration</span><span>Testing at scale</span>
+                <span>Networking</span><span>System administration</span>
               </div>
             </div>
           </div>
@@ -491,7 +671,7 @@
       <section id="contact" class="section contact-section">
         <div class="container contact-wrap reveal">
           <div>
-            <p class="eyebrow">07 — Contact</p>
+            <p class="eyebrow">08 — Contact</p>
             <h2>Have a project or a role in mind?</h2>
             <p>
               I’m open to junior developer roles, AI automation work, web support and freelance projects that need

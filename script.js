@@ -83,6 +83,8 @@
     "MCP tools for coding agents",
     "a CRM for small teams",
     "a Roku TV dashboard",
+    "a delivery app for Nassau",
+    "a self-hosted AI homelab",
   ];
   if (rotator && !reduceMotion) {
     let r = 0;
@@ -241,6 +243,21 @@
     { passive: true }
   );
   onScroll();
+
+  /* ---------- timeline line draws as you scroll ---------- */
+  const timeline = $(".timeline");
+  if (timeline) {
+    if (reduceMotion) timeline.classList.add("static");
+    else {
+      const drawLine = () => {
+        const r = timeline.getBoundingClientRect();
+        const p = (window.innerHeight * 0.75 - r.top) / r.height;
+        timeline.style.setProperty("--tl", Math.max(0, Math.min(1, p)).toFixed(3));
+      };
+      window.addEventListener("scroll", () => requestAnimationFrame(drawLine), { passive: true });
+      drawLine();
+    }
+  }
 
   /* ---------- pointer effects (desktop only) ---------- */
   if (finePointer && !reduceMotion) {
