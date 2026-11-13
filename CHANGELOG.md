@@ -1,5 +1,13 @@
 # Changelog
 
+## Portfolio V4.1 — Bahamas theme (2026-11-13)
+
+- Palette moved to Bahamas flag colors: gold #FFC72C, aquamarine #00ABC9, black, on a deep-ocean background
+- Flag-style logo mark with the black chevron, flag stripe in the scroll bar and above the footer
+- Hero gets a glowing sun and three layers of animated ocean waves
+- Belts recolored: gold stack belt crossing an aquamarine "Build · Automate · Ship" belt
+- Waves and sun stop under reduced-motion settings
+
 ## Portfolio V4 — Redesign (2026-11-13)
 
 ### Added
