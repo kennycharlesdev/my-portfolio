@@ -1,20 +1,15 @@
 
 /* =========================================
-   KINY CHARLES — PORTFOLIO V2.0
+   KINY CHARLES — PORTFOLIO V3.0
    Interactive Features
 ========================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
-
-  // 1. AUTOMATIC COPYRIGHT YEAR
-
   const yearElement = document.getElementById("year");
 
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }
-
-  // 2. MOBILE NAVIGATION MENU
 
   const menuToggle = document.querySelector(".menu-toggle");
   const navLinks = document.querySelector(".nav-links");
@@ -64,15 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
     document.addEventListener("click", (event) => {
       if (!navbar) return;
 
-      if (
-        navLinks.classList.contains("active") &&
-        !navbar.contains(event.target)
-      ) {
+      if (navLinks.classList.contains("active") && !navbar.contains(event.target)) {
         closeMenu();
       }
     });
 
-    const desktopView = window.matchMedia("(min-width: 901px)");
+    const desktopView = window.matchMedia("(min-width: 761px)");
 
     desktopView.addEventListener("change", (event) => {
       if (event.matches) {
@@ -81,4 +73,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const revealItems = document.querySelectorAll(".reveal");
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    revealItems.forEach((item) => observer.observe(item));
+  } else {
+    revealItems.forEach((item) => item.classList.add("is-visible"));
+  }
 });
