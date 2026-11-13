@@ -244,6 +244,29 @@
   );
   onScroll();
 
+  /* ---------- light / dark toggle ---------- */
+  const themeBtn = $(".theme-toggle");
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+  const syncTheme = () => {
+    const light = document.documentElement.dataset.theme === "light";
+    themeBtn?.setAttribute("aria-label", light ? "Switch to dark mode" : "Switch to light mode");
+    metaTheme?.setAttribute("content", light ? "#fbf6ea" : "#031217");
+  };
+  syncTheme();
+  themeBtn?.addEventListener("click", () => {
+    const root = document.documentElement;
+    const next = root.dataset.theme === "light" ? "dark" : "light";
+    if (!reduceMotion) {
+      root.classList.add("theme-anim");
+      setTimeout(() => root.classList.remove("theme-anim"), 400);
+    }
+    root.dataset.theme = next;
+    try {
+      localStorage.setItem("theme", next);
+    } catch (e) {}
+    syncTheme();
+  });
+
   /* ---------- demo videos: play only while visible ---------- */
   const videos = $$(".demo-video");
   if (videos.length) {

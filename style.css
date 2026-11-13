@@ -18,6 +18,15 @@
   --cyan: #3fe0d0;
   --lime-soft: rgba(255, 199, 44, 0.12);
   --violet-soft: rgba(0, 171, 201, 0.14);
+  --lime-ink: #ffc72c;
+  --cyan-ink: #3fe0d0;
+  --violet-ink: #00abc9;
+  --header-bg: rgba(3, 18, 23, 0.72);
+  --menu-bg: rgba(3, 18, 23, 0.97);
+  --soft-text: #cfe3e6;
+  --mvp-text: #7fe3f2;
+  --stroke-faint: rgba(255, 255, 255, 0.35);
+  color-scheme: dark;
   --radius: 22px;
   --display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
   --body: "Inter", system-ui, -apple-system, sans-serif;
@@ -110,7 +119,7 @@ h3 {
   font-size: 0.78rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--lime);
+  color: var(--lime-ink);
   margin-bottom: 14px;
 }
 
@@ -164,7 +173,7 @@ h3 {
 }
 
 .site-header.scrolled {
-  background: rgba(3, 18, 23, 0.72);
+  background: var(--header-bg);
   backdrop-filter: blur(16px) saturate(140%);
   -webkit-backdrop-filter: blur(16px) saturate(140%);
   border-color: var(--border);
@@ -501,7 +510,7 @@ h3 {
 
 .rotator {
   display: inline-block;
-  color: var(--lime);
+  color: var(--lime-ink);
   min-width: 1ch;
 }
 
@@ -630,7 +639,7 @@ h3 {
 }
 
 .terminal-body .t-prompt {
-  color: var(--lime);
+  color: var(--lime-ink);
 }
 
 .terminal-body .t-ok {
@@ -642,7 +651,7 @@ h3 {
 }
 
 .terminal-body .t-key {
-  color: var(--cyan);
+  color: var(--cyan-ink);
 }
 
 .caret {
@@ -678,7 +687,7 @@ h3 {
 .chip-a {
   top: -18px;
   right: 26px;
-  color: var(--lime);
+  color: var(--lime-ink);
 }
 
 .chip-b {
@@ -813,7 +822,7 @@ h3 {
 }
 
 .belt-b .belt-group li.star {
-  color: var(--violet);
+  color: var(--violet-ink);
   opacity: 1;
   font-size: 0.8rem;
 }
@@ -832,7 +841,7 @@ h3 {
 
 .belt-cta .belt-group li {
   font-size: clamp(2.2rem, 6vw, 4.6rem);
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.35);
+  -webkit-text-stroke: 1px var(--stroke-faint);
   color: transparent;
   transition: color 0.3s;
 }
@@ -843,7 +852,7 @@ h3 {
 
 .belt-cta .belt-group li.star {
   -webkit-text-stroke: 0;
-  color: var(--lime);
+  color: var(--lime-ink);
   font-size: 2rem;
   opacity: 1;
 }
@@ -938,7 +947,7 @@ h3 {
   border-radius: 12px;
   margin-bottom: 18px;
   background: var(--lime-soft);
-  color: var(--lime);
+  color: var(--lime-ink);
   font-size: 1.15rem;
 }
 
@@ -1022,7 +1031,7 @@ h3 {
   font-family: var(--display);
   font-weight: 800;
   font-size: 1.3rem;
-  color: var(--lime);
+  color: var(--lime-ink);
 }
 
 .thumb-nodes i {
@@ -1150,13 +1159,13 @@ h3 {
 }
 
 .status-live {
-  color: var(--lime);
+  color: var(--lime-ink);
   border-color: rgba(255, 199, 44, 0.35);
   background: var(--lime-soft);
 }
 
 .status-mvp {
-  color: #7fe3f2;
+  color: var(--mvp-text);
   border-color: rgba(0, 171, 201, 0.4);
   background: var(--violet-soft);
 }
@@ -1171,14 +1180,14 @@ h3 {
   position: relative;
   padding-left: 22px;
   font-size: 0.9rem;
-  color: #cfe3e6;
+  color: var(--soft-text);
 }
 
 .feature-list li::before {
   content: "→";
   position: absolute;
   left: 0;
-  color: var(--lime);
+  color: var(--lime-ink);
 }
 
 .meta-row {
@@ -1212,13 +1221,13 @@ h3 {
 .project-links a {
   font-weight: 600;
   font-size: 0.9rem;
-  color: var(--lime);
+  color: var(--lime-ink);
   border-bottom: 1px solid transparent;
   transition: border-color 0.2s;
 }
 
 .project-links a:hover {
-  border-color: var(--lime);
+  border-color: var(--lime-ink);
 }
 
 /* case studies */
@@ -1270,7 +1279,7 @@ h3 {
   font-weight: 800;
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.25);
+  -webkit-text-stroke: 1px var(--stroke-faint);
   margin-bottom: 6px;
 }
 
@@ -1296,7 +1305,7 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--lime);
+  color: var(--lime-ink);
   margin-bottom: 2px;
 }
 
@@ -1437,7 +1446,7 @@ h3 {
 }
 
 .live-value.is-pass {
-  color: var(--lime);
+  color: var(--lime-ink);
 }
 
 .live-sub {
@@ -1474,14 +1483,14 @@ h3 {
 .commit-sha {
   font-family: var(--mono);
   font-size: 0.75rem;
-  color: var(--lime);
+  color: var(--lime-ink);
 }
 
 .commit-msg {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  color: #cfe3e6;
+  color: var(--soft-text);
 }
 
 .commit-list a:hover .commit-msg {
@@ -1523,7 +1532,7 @@ h3 {
   display: block;
   font-family: var(--mono);
   font-size: 0.8rem;
-  color: var(--lime);
+  color: var(--lime-ink);
   margin-bottom: 40px;
 }
 
@@ -1569,8 +1578,8 @@ h3 {
 }
 
 .skill-list span:hover {
-  border-color: var(--lime);
-  color: var(--lime);
+  border-color: var(--lime-ink);
+  color: var(--lime-ink);
   transform: translateY(-2px);
 }
 
@@ -1626,7 +1635,7 @@ h3 {
 
 .contact-panel a:hover,
 .contact-email:hover {
-  border-color: var(--lime);
+  border-color: var(--lime-ink);
   background: var(--lime-soft);
 }
 
@@ -1637,7 +1646,7 @@ h3 {
   padding: 22px;
   background: var(--lime);
   color: #031217;
-  border-color: var(--lime);
+  border-color: var(--lime-ink);
 }
 
 .contact-email:hover {
@@ -1686,7 +1695,7 @@ h3 {
 }
 
 .footer a:hover {
-  color: var(--lime);
+  color: var(--lime-ink);
 }
 
 /* toast */
@@ -1770,7 +1779,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    background: rgba(3, 18, 23, 0.97);
+    background: var(--menu-bg);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     opacity: 0;
@@ -2023,7 +2032,7 @@ body {
 }
 
 .belt-cta .belt-group li.star {
-  color: var(--lime);
+  color: var(--lime-ink);
 }
 
 /* status badges + buttons */
@@ -2032,19 +2041,19 @@ body {
 }
 
 .status-mvp {
-  color: #7fe3f2;
+  color: var(--mvp-text);
   border-color: rgba(0, 171, 201, 0.45);
   background: rgba(0, 171, 201, 0.12);
 }
 
 .mini-icon {
   background: rgba(0, 171, 201, 0.14);
-  color: var(--cyan);
+  color: var(--cyan-ink);
 }
 
 .mini-card:nth-child(odd) .mini-icon {
   background: rgba(255, 199, 44, 0.12);
-  color: var(--lime);
+  color: var(--lime-ink);
 }
 
 .case-num {
@@ -2227,7 +2236,7 @@ body {
 }
 
 .timeline li.now::before {
-  border-color: var(--lime);
+  border-color: var(--lime-ink);
   background: var(--lime);
   box-shadow: 0 0 0 6px rgba(255, 199, 44, 0.15);
   animation: hub-pulse 2.6s ease-in-out infinite;
@@ -2237,7 +2246,7 @@ body {
   font-family: var(--mono);
   font-size: 0.74rem;
   letter-spacing: 0.1em;
-  color: var(--lime);
+  color: var(--lime-ink);
 }
 
 .timeline h3 {
@@ -2298,7 +2307,7 @@ a.more-card:hover {
   margin-top: auto;
   font-size: 0.82rem;
   font-weight: 600;
-  color: var(--lime);
+  color: var(--lime-ink);
 }
 
 .status-build {
@@ -2336,7 +2345,7 @@ a.more-card:hover {
   padding: 2px 6px 10px;
   font-family: var(--mono);
   font-size: 0.76rem;
-  color: var(--lime);
+  color: var(--lime-ink);
 }
 
 .rack-os {
@@ -2354,7 +2363,7 @@ a.more-card:hover {
   background: repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.025) 0 2px, transparent 2px 6px), #062029;
   font-family: var(--mono);
   font-size: 0.76rem;
-  color: #cfe3e6;
+  color: var(--soft-text);
 }
 
 .rack-unit span {
@@ -2475,7 +2484,7 @@ a.more-card:hover {
   height: 32px;
   border-radius: 10px;
   background: rgba(0, 171, 201, 0.14);
-  color: var(--cyan);
+  color: var(--cyan-ink);
   font-size: 0.95rem;
 }
 
@@ -2581,6 +2590,153 @@ a.more-card:hover {
 @media (max-width: 1024px) {
   .case-study.reverse .case-stack {
     order: 0;
+  }
+}
+
+
+/* =========================================
+   LIGHT MODE — sand & sea
+   Follows the device setting; the nav toggle overrides it.
+========================================= */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #fbf6ea;
+  --bg-2: #f3ead4;
+  --surface: rgba(3, 18, 23, 0.035);
+  --surface-2: rgba(3, 18, 23, 0.06);
+  --border: rgba(3, 18, 23, 0.1);
+  --border-strong: rgba(3, 18, 23, 0.2);
+  --text: #0b2a33;
+  --muted: #3f5f66;
+  --dim: #5d777d;
+  --lime-soft: rgba(255, 199, 44, 0.22);
+  --violet-soft: rgba(0, 171, 201, 0.12);
+  --lime-ink: #8a5d00;
+  --cyan-ink: #08706f;
+  --violet-ink: #006f86;
+  --header-bg: rgba(251, 246, 234, 0.82);
+  --menu-bg: rgba(251, 246, 234, 0.98);
+  --soft-text: #2c4a51;
+  --mvp-text: #006f86;
+  --stroke-faint: rgba(3, 18, 23, 0.3);
+}
+
+:root[data-theme="light"] body {
+  background:
+    radial-gradient(1200px 600px at 50% 120%, rgba(0, 171, 201, 0.12), transparent 70%),
+    var(--bg);
+}
+
+:root[data-theme="light"] .sun {
+  opacity: 0.6;
+}
+
+:root[data-theme="light"] .status-build {
+  color: #9a4a00;
+}
+
+:root[data-theme="light"] .pipeline .wire {
+  stroke: rgba(3, 18, 23, 0.15);
+}
+
+:root[data-theme="light"] .pipeline .node rect,
+:root[data-theme="light"] .pipeline .node circle {
+  fill: #ffffff;
+  stroke: rgba(3, 18, 23, 0.2);
+}
+
+:root[data-theme="light"] .case-media,
+:root[data-theme="light"] .project-card,
+:root[data-theme="light"] .terminal {
+  box-shadow: 0 30px 70px -40px rgba(3, 40, 50, 0.45);
+}
+
+:root[data-theme="light"] .nav-links .nav-cta {
+  color: #fbf6ea;
+}
+
+:root[data-theme="light"] .nav-links .nav-cta:hover {
+  color: #031217;
+}
+
+:root[data-theme="light"] .hero-title .accent > span,
+:root[data-theme="light"] .grad {
+  background-image: linear-gradient(100deg, #c27f00, #d99200 35%, #079088 70%, #00728a);
+}
+
+/* code window, chips and server rack stay dark, like real hardware */
+:root[data-theme="light"] .terminal,
+:root[data-theme="light"] .float-chip,
+:root[data-theme="light"] .rack {
+  --text: #f7f3e8;
+  --muted: #9dbcc2;
+  --dim: #6b8c93;
+  --border: rgba(255, 255, 255, 0.09);
+  --surface: rgba(255, 255, 255, 0.035);
+  --lime-ink: #ffc72c;
+  --cyan-ink: #3fe0d0;
+  --violet-ink: #00abc9;
+  --soft-text: #cfe3e6;
+  color: var(--text);
+}
+
+/* theme toggle */
+.navbar {
+  gap: 10px;
+}
+
+.nav-links {
+  margin-left: auto;
+}
+
+.theme-toggle {
+  order: 3;
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--lime-ink);
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s, transform 0.4s var(--ease);
+}
+
+.theme-toggle:hover {
+  border-color: var(--border-strong);
+  transform: rotate(-20deg);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle .icon-moon,
+:root[data-theme="light"] .theme-toggle .icon-sun {
+  display: none;
+}
+
+:root[data-theme="light"] .theme-toggle .icon-moon {
+  display: block;
+}
+
+.menu-toggle {
+  order: 4;
+}
+
+html.theme-anim,
+html.theme-anim *,
+html.theme-anim *::before,
+html.theme-anim *::after {
+  transition: background-color 0.35s, color 0.35s, border-color 0.35s, fill 0.35s !important;
+}
+
+@media (max-width: 1024px) {
+  .theme-toggle {
+    margin-left: auto;
   }
 }
 
